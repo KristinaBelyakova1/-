@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Плавные переходы */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Увеличение изображения при наведении */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Более темный фон для модального окна */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff; 
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s; 
+}
+
+.close:hover {
+    color: #ff4757; 
+}
+
+#downloadLink {
+    display: block;
+    margin-top: 20px;
+    color: #fff; 
+    text-decoration: none; 
+    background-color: #007bff; 
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    text-align: center; 
+    transition: background-color 0.3s; 
+}
+
+#downloadLink:hover {
+    background-color: #0056b3; 
+}
